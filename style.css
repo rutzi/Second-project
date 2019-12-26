@@ -161,3 +161,31 @@ header{
 	width: 45%;
 	display: inline-block;	
 }
+
+
+main{
+	margin-top: 25px;
+}
+.infoBlock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 65vh;
+	padding-bottom: 3%;
+}
+.infoBlock > *{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+.interactiveBlock h3{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 20px 0 15px 0;
+}
+.interactiveBlock p{
+	font-size: 14px;
+	width: 70%;
+	display: inline-block;
+}
