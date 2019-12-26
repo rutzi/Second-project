@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+h1, h2,h3,h4,h5,p,a{
+	
+}
+.wrap{
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+body{
+	font-family: sans-serif;
+}
+header{
+	background: url('img/headerBackground.jpg');
+}
+.titleSite{
+	background: linear-gradient(to top, transparent 20%, rgba(0, 0, 0, .5) 70%);
+}
+.titleBlock{
+	padding: 2% 0;
+	display: inline-block;
+	width: 45%;
+}
+.logo a{
+	text-transform: uppercase;
+	color: #5a5a5a;
+	font-weight: 900;
+}
+.number{
+	float: right;
+	text-align: right;
+}
+.number a{
+	color: #fff;
+	display: block;
+}
+#call{
+	color: #d91233;
+	text-decoration: underline;
+}
+
+
+.headerContentTitle{
+	padding-top: 7%;
+	text-align: center;
+	color: #fff;
+}
+.headerContentTitle h1{
+	font-size: 48px;
+	display: inline-block;
+	width: 100%
+}
+.headerContentTitle p{
+	font-size: 24px;
+	margin-bottom: 5%;
+}
+
+
+.ourOffer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 7%;
+}
+.headerContBlock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	color: #fff;
+	width: 15%;
+	text-align: center;
+	margin-right: 30px;
+}
+.headerContBlock a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.headerContBlock a img{
+	width: 100%;
+}
+
+
+.offersBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 7%;
+}
+.headerBtn{
+	width: 25%;
+}
+.headerBtn a{
+	display: inline-block;
+	width: 150px;
+	height: 35px;
+	color: #fff;
+	line-height: 35px;
+	margin-bottom: 20px;
+	border: 2px solid #d91233;
+	border-radius: 35px;
+	transition: .5s;
+}
+.headerBtn a:hover{
+	background: #d91233;
+}
+.headerBtn p{
+	font-size: 12px;
+	width: 45%;
+	display: inline-block;	
+}
