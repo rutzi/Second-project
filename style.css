@@ -314,3 +314,58 @@ main{
 	border: 4px solid #f2f2f2
 }
 
+
+
+
+.feedback{
+	min-height: 300px;
+	max-height: 500px;
+	background: #ebebeb;
+	padding: 5%;
+}
+.feedback h1{
+	font-size: 30px;
+	font-weight: 600;
+	margin: 40px;
+}
+.clients{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.clientComment{
+	margin-top: 5%;
+	width: 50%;
+}
+.clientComment> *{
+	margin-right: 10px;
+}
+.clientComment p{
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.clientComment h2{
+	font-size: 17px;
+	margin-bottom: 7px;
+	color: #d91233;
+}
+.clientComment p span{
+	color: #757575;
+	font-size: 10px
+}
+.clientComment a{
+	float: left;
+	width: 130px;
+	height: 130px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.clientComment a img{
+	float: left;
+	width: 100%;
+	height: 100%
+}
+
