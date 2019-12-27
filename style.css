@@ -192,7 +192,8 @@ main{
 
 
 .detailedApplic{
-	background: #ebebeb
+	background: #ebebeb;
+	padding-bottom: 5%;
 }
 
 .detailedApplic > p, h1{
@@ -261,4 +262,31 @@ main{
 .appForm .btn:hover{
 	background: #fff;
 	color: #d91233;
+}
+
+
+
+.availableParts{
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	padding-bottom: 5%;
+}
+.availableParts h1{
+	margin: 7% 0 5% 0;
+}
+.brandsBlock{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 80%;
+}
+.brandsBlock a img{
+	filter: grayscale(1) blur(1px);
+	transition: .3s;
+}
+.brandsBlock a:hover img{
+	filter: grayscale(0) blur(0);
 }
