@@ -154,7 +154,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 	top: 38%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -163,7 +163,7 @@ header{
 }
 .callbackOrder{
 	width: 350px;
-	height: 250px;
+	min-height: 320px;
 	color: #000;
 	background: #fff;
 	text-align: center;
@@ -174,13 +174,54 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 	top: 38%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	transition: .5s;
 }
+.callbackOrder input{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 2px solid #999;
+}
+
+
+.showfastPopup{
+	width: 350px;
+	min-height: 300px;
+	color: #000;
+	background: #fff;
+	text-align: center;
+	display: flex;
+	padding-top:10px;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: -1;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: .5s;
+}
+.showfastPopup input{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 2px solid #999;
+}
+
+
+
+
+
 .active{
 	top: 48%;
 	opacity: 1;
@@ -190,9 +231,9 @@ header{
 	filter: blur(5px);
 }
 
-html.blur  .popupBlock{
-	filter: blur(0);
-}
+
+
+
 
 .thanksBlock h1{
 	font-size: 24px;
@@ -207,7 +248,8 @@ html.blur  .popupBlock{
 	right: -32px;
 	cursor: pointer;
 }
-.first-line, .second-line{
+.closeBtn:before, .closeBtn:after{
+	content: '';
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -217,13 +259,12 @@ html.blur  .popupBlock{
 	display: block;
 	background: #d91233;	
 }
-.first-line{
+.closeBtn:before{
 	transform: translate(-50%, -50%) rotateZ(-45deg);
 }
-.second-line{
+.closeBtn:after{
 	transform: translate(-50%, -50%) rotateZ(45deg);
 }
-
 
 
 
