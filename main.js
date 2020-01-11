@@ -1,16 +1,14 @@
-let takeCall = document.querySelectorAll('.number');
-let closeBtn = document.querySelectorAll('.closeBtn');
-let thanksBlock = document.querySelector('.thanksBlock');
-let html = document.querySelector('html');
-let popupBlock = document.querySelector('.popupBlock');
-let callbackOrder = document.querySelector('.callbackOrder');
-let tnxbtn = document.querySelectorAll('.tnxbtn');
-let fastAppliBtn = document.querySelector('.fastAppliBtn');
-let detailOrderBtn = document.querySelector('.detailOrderBtn');
-let showfastPopup = document.querySelector('.showfastPopup');
-
-
 function popUp(){
+	let takeCall = document.querySelectorAll('.number');
+	let closeBtn = document.querySelectorAll('.closeBtn');
+	let thanksBlock = document.querySelector('.thanksBlock');
+	let html = document.querySelector('html');
+	let popupBlock = document.querySelector('.popupBlock');
+	let callbackOrder = document.querySelector('.callbackOrder');
+	let tnxbtn = document.querySelectorAll('.tnxbtn');
+	let fastAppliBtn = document.querySelector('.fastAppliBtn');
+	let detailOrderBtn = document.querySelector('.detailOrderBtn');
+	let showfastPopup = document.querySelector('.showfastPopup');
 	for(let i=0;i<takeCall.length;i++){
 		takeCall[i].addEventListener('click', call);
 	}
