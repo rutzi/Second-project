@@ -55,6 +55,8 @@ h1, h2,h3,h4,h5,p,a{
 
 
 body{
+	position: relative;
+	transition: .5s;
 	font-family: sans-serif;
 }
 h1{
@@ -223,12 +225,24 @@ header{
 
 
 .active{
-	top: 48%;
+
 	opacity: 1;
 	z-index: 2;
+	transform: translate(-50%, -30%);
 }
-.blur{
-	filter: blur(5px);
+.scroll{
+	overflow-y:hidden;
+
+}
+body.scroll::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	filter: blur(3px);
+	height: 100%;
+	background: rgba(255, 255, 255, .1);
 }
 
 
@@ -591,6 +605,7 @@ main{
 .contactInfo a{
 	color: #fff;
 }
+
 
 
 
